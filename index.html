@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Inteko y'umuco - Rwandan Culture Museum</title>
+<style>
+  /* Scroll animation */
+  @keyframes scroll-left {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f6f1e7 0%, #e0d4b7 100%);
+    color: #4b2e05;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background: #a1682a;
+    color: #fff8e1;
+    padding: 1rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+
+  .scrolling-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 15s linear infinite;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fffaf0;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(161, 115, 52, 0.3);
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    border-bottom: 2px solid #a1682a;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .pricing {
+    background: #f7e9c9;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #603913;
+  }
+
+  .booking {
+    background: #a1682a;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .booking label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .booking input[type="date"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .booking button {
+    background-color: #f6f1e7;
+    color: #a1682a;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .booking button:hover {
+    background-color: #d6c092;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+
+  .contact-info a {
+    color: #a1682a;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  .whatsapp-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: #25d366;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .whatsapp-button:hover {
+    background-color: #128c4a;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6b4b1d;
+    padding: 1rem 0;
+    background: #f3e9d2;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="scrolling-text">Inteko y'umuco - Museum of Rwandan Culture</div>
+</header>
+
+<main>
+  <section>
+    <h2>About Rwandan Culture</h2>
+    <p>
+      Rwanda is rich in tradition and culture, known for its music, dance, crafts, and storytelling.
+      At Inteko y'umuco, we celebrate and preserve the history and vibrant culture of Rwanda.
+      Visitors can learn about traditional customs, wear cultural attire, and experience authentic Rwandan hospitality.
+    </p>
+  </section>
+
+  <section>
+    <h2>Night Culture Experience</h2>
+    <p>
+      Join us for our special night culture time where you can camp under the stars,
+      share stories, and learn deeply about Rwandan culture through conversations and performances.
+    </p>
+  </section>
+
+  <section class="pricing">
+    <h2>Pricing</h2>
+    <p>Children: 2,000 Rwandan Francs</p>
+    <p>Adults: 5,000 Rwandan Francs</p>
+  </section>
+
+  <section class="booking">
+    <h2>Book Your Visit</h2>
+    <p>Host: Mbabazi Christine</p>
+    <form>
+      <label for="visit-date">Select your visit date:</label>
+      <input type="date" id="visit-date" name="visit-date" required />
+      <br />
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section class="contact-info">
+    <h2>Contact & Location</h2>
+    <p>Location: Kanombe, Kigali, Rwanda</p>
+    <p>Email: <a href="mailto:inteko@gmil.com">inteko@gmil.com</a></p>
+    <p>Call us: <a href="tel:+250795459786">0795 459 786</a></p>
+    <a
+      href="https://wa.me/250795459786"
+      target="_blank"
+      rel="noopener"
+      class="whatsapp-button"
+      >Chat on WhatsApp</a
+    >
+  </section>
+
+  <section>
+    <h2>Books for Sale</h2>
+    <p>
+      We sell books about Rwandan history and culture. Contact us via email or phone to order your copy.
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Inteko y'umuco. All rights reserved.
+</footer>
+
+</body>
+</html>
